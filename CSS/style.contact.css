@@ -9,7 +9,7 @@ table, th, td {
 }
 
 body {
-    background-image: url(./background.jpg);
+    background-image: url(/pictures/background.jpg);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -22,7 +22,7 @@ th, td {
 }
 
 header {
-    background-image: url(./header.jpg);
+    background-image: url(/pictures/header.jpg);
     padding: 1px;
     text-align: center;
     font-size: 35px;
@@ -54,18 +54,32 @@ li a:hover {
     color: white;
 }
 
-p {
-    font-size: 14px;
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
 }
 
-h5 {
-    font-size: 
+input[type=submit] {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-.rotate90 {
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
 }
