@@ -22,18 +22,36 @@
     <h3>Als u contact met mij wil opnemen, vul dan alstublieft het onderstaande formulier in.</h3>
     <div id="form">
      <form action="/formgegevens.php">
-        <fieldset>
-            <legend>Persoonlijke Informatie</legend>
-        <strong>Voornaam:</strong><br>
-        <input type="text" name="firstname"><br><br>
-        <strong>Achternaam:</strong><br>
-        <input type="text" name="lastname"><br><br>
-        <strong>Geslacht:</strong><br>
-        <input type="radio" name="gender" value="male"> Man<br>
-        <input type="radio" name="gender" value="female"> Vrouw<br>
-        <input type="radio" name="gender" value="notspecified"> Zeg ik liever niet<br><br>
-        </fieldset>
-        <input type="submit">
+        
+        <label for="firstname">Voornaam</label>
+        <input type="text" name="firstname" placeholder="Uw voornaam..">
+
+        <label for="lastname">Achternaam</label>
+        <input type="text" name="lastname" placeholder="Uw achternaam.."><br><br>
+
+        <label for="gender">Geslacht</label>
+        <select id="gender" name="gender">
+            <option value="male">Man</option>
+            <option value="female">Vrouw</option>
+            <option value="notspecified">Anders</option>
+        </select>
+
+        <label for="subject">Onderwerp</label>
+        <select id="reason" name="gender">
+            <option value="info">Info</option>
+            <option value="work">Werk</option>
+            <option value="hobby">Hobbýs</option>
+            <option value="programlang">Programmeertalen</option>
+            <option value="study">Opleiding</option>
+        </select>
+
+        <label for="email">Email</label>
+        <input type="text" name="email" placeholder="Uw email..">
+
+        <label for="subject">Uw bericht naar mij..</label>
+        <textarea id="subject" name="subject" placeholder="Typ iets.." style="height:200px;"></textarea>
+
+        <input type="submit" value="Versturen" target="_blank">
      </form>
     </div>
 </html>

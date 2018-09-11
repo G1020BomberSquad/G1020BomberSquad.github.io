@@ -9,7 +9,7 @@ table, th, td {
 }
 
 body {
-    background-image: url(https://wallpapertag.com/wallpaper/full/1/a/1/350829-widescreen-website-background-1920x1080-windows-xp.jpg);
+    background-image: url(./background.jpg);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -22,7 +22,7 @@ th, td {
 }
 
 header {
-    background-image: url(https://wallpaperbrowse.com/media/images/blue-fog-banner-background.jpg);
+    background-image: url(./header.jpg);
     padding: 1px;
     text-align: center;
     font-size: 35px;
@@ -52,4 +52,34 @@ li a {
 li a:hover {
     background-color: #555;
     color: white;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
 }
