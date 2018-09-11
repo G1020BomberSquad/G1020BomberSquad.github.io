@@ -1,0 +1,55 @@
+
+table {
+    border-collapse: collapse;
+    margin-bottom:50px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+body {
+    background-image: url(https://wallpapertag.com/wallpaper/full/1/a/1/350829-widescreen-website-background-1920x1080-windows-xp.jpg);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    padding: 15px;
+}
+
+header {
+    background-image: url(https://wallpaperbrowse.com/media/images/blue-fog-banner-background.jpg);
+    padding: 1px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightblue;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #555;
+    color: white;
+}
