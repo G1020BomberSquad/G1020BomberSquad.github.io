@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="/css/style.contact.css" type="text/css" rel="stylesheet">
+    <link href="/css/bootstrap.css" type="text/css" rel="stylesheet">
     <script src="./script.js"></script>
 </head>
 <body>
@@ -17,11 +18,13 @@
         <li><a href="./index.html">Home</a></li>
         <li><a href="./hobby.html">Hobby's</a></li>
         <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./happybrides.html">Happy Brides</a></li>
+
     </ul>
     </div>
     <h3>Als u contact met mij wil opnemen, vul dan alstublieft het onderstaande formulier in.</h3>
     <div id="form">
-     <form action="/formgegevens.php">
+     <form action="mailto:info@jsvdmeer.net" method="post">
         
         <label for="firstname">Voornaam</label>
         <input type="text" name="firstname" placeholder="Uw voornaam..">
@@ -48,8 +51,8 @@
         <label for="email">Email</label>
         <input type="text" name="email" placeholder="Uw email..">
 
-        <label for="subject">Uw bericht naar mij..</label>
-        <textarea id="subject" name="subject" placeholder="Typ iets.." style="height:200px;"></textarea>
+        <label for="text">Uw bericht naar mij..</label>
+        <textarea id="text" name="text" placeholder="Typ iets.." style="height:200px;"></textarea>
 
         <input type="submit" value="Versturen" target="_blank">
      </form>
