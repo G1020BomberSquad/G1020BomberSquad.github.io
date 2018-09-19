@@ -58,6 +58,11 @@ p {
     font-size: 14px;
 }
 
+tr :hover {
+    color: red;
+}
+     
+
 .rotate90 {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
