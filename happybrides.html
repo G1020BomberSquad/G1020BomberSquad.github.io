@@ -24,51 +24,26 @@
 </div>
 
 <div class="jumbotron text-center">
-  <h1>My First Bootstrap Page</h1>
-  <p>Resize this responsive page to see the effect!</p> 
-</div>
-  
-<div class="container">
-  <div class="row">
-    <div class="col-sm-4">
-      <h3>Column 1</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Column 2</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Column 3</h3>        
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-    </div>
-  </div>
+  <h1>a Special day</h1>
+  <p>Heeft u nog geen account? Maak dan <a href="/registration/register.php">hier</a> een account aan. Al een account? <br> <a>Inloggen</a></p> 
 </div>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Voornaam</th>
-            <th>Achternaam</th>
-            <th>Email</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td scope="row">Johan</td>
-            <td>Pieter</td>
-            <td>Lol</td>
-        </tr>
-        <tr>
-            <td scope="row">Achter</td>
-            <td>LOL</td>
-            <td>Nee</td>
-        </tr>
-    </tbody>
-</table>
+<form action="action_page.php">      
+        <div class="container">
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Voer uw email in" name="uname" required>
+         
+          <label for="psw"><b>Wachtwoord</b></label>
+          <input type="password" placeholder="Voer uw wachtwoord in" name="psw" required>
+          
+          <button type="submit">Login</button>
+          <br>
+        </div>
+      
+        <div class="container">
+          <span class="psw">Uw <a href="">wachtwoord</a> vergeten?</span>
+        </div>
+      </form>
 
 </body>
 </html>
