@@ -7,7 +7,7 @@ $email    = "";
 $errors = array(); 
 
 // connect to the database
-$db = mysqli_connect('https://mysql.transip.nl/db_structure.php?server=1&db=jsvdmeer_net_form', 'jsvdmeer_net_form', 'IegrK445020', 'registration');
+$db = mysqli_connect('jsvdmeer.net', 'jsvdmeer_net_form', 'IegrK445020', 'registration');
 
 // REGISTER USER
 if (isset($_POST['reg_user'])) {
@@ -62,10 +62,10 @@ if (isset($_POST['login_user'])) {
   
    // if (empty($username)) {
    //     array_push($errors, "Username is required");
-   // }
+    }
   //  if (empty($password)) {
   //      array_push($errors, "Password is required");
-   // }
+    }
   
     if (count($errors) == 0) {
         $password = md5($password);
