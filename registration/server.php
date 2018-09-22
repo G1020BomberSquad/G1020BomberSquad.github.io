@@ -7,7 +7,7 @@ $email    = "";
 $errors = array(); 
 
 // connect to the database
-$db = mysqli_connect('https://mysql.transip.nl/db_structure.php?server=1&db=jsvdmeer_net_form', 'jsvdmeer_net_form', 'IegrK445020', 'registration');
+$db = mysqli_connect('localhost', 'jsvdmeer_net_database', 'AkHKV7F6VwkH', 'registration');
 
 // REGISTER USER
 if (isset($_POST['reg_user'])) {
