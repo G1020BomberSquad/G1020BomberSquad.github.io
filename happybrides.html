@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="/css/style.habbybrides.css" type="text/css" rel="stylesheet">
   <link href="/css/bootstrap.css" type="text/css" rel="stylesheet">
-  <script src="/js/script.js"></script>
+  <script src="/js/happyrbrides.js"></script>
 </head>
 
 <body>
@@ -15,7 +15,7 @@
     <header>
         <h3>Welkom</h3> 
     </header>
-    <ul>
+    <ul id="menu">
         <li><a href="./index.html">Home</a></li>
         <li><a href="./hobby.html">Hobby's</a></li>
         <li><a href="./contact.html"\>Contact</a></li>
@@ -25,25 +25,24 @@
 
 <div class="jumbotron text-center">
   <h1>a Special day</h1>
-  <p>Heeft u nog geen account? Maak dan <a href="/registration/register.php">hier</a> een account aan. Al een account? <br> <a>Inloggen</a></p> 
+  <p>Heeft u nog geen account? Maak dan <a href="/registration/register.php">hier</a> een account aan. Al een account? <br> 
+    <a href="/registration/login.php">Inloggen</a> <br> </p>
 </div>
 
-<form action="action_page.php">      
-        <div class="container">
-          <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="Voer uw email in" name="uname" required>
-         
-          <label for="psw"><b>Wachtwoord</b></label>
-          <input type="password" placeholder="Voer uw wachtwoord in" name="psw" required>
-          
-          <button type="submit">Login</button>
-          <br>
-        </div>
-      
-        <div class="container">
-          <span class="psw">Uw <a href="">wachtwoord</a> vergeten?</span>
-        </div>
-      </form>
+<div>
+    <ol id="dynamic-list"></ol>
+
+    <input type="text" id="candidate"/>
+    <button onclick="addItem()">add item</button>
+    <button onclick="removeItem()">remove item</button>
+
+
+
+
+
+
+
+</div>
 
 </body>
 </html>
