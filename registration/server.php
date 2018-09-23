@@ -7,7 +7,10 @@ $email    = "";
 $errors = array(); 
 
 // connect to the database
-$db = mysqli_connect('localhost', 'jsvdmeer_net_database', 'AkHKV7F6VwkH', 'registration');
+$db = mysqli_connect('localhost', 'jsvdmeer_net_database', 'AkHKV7F6VwkH', 'jsvdmeer_net_database');
+
+// select table
+// bool mysqli_select_db ( mysqli $link , string $registration )
 
 // REGISTER USER
 if (isset($_POST['reg_user'])) {
