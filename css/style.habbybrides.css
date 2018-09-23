@@ -29,7 +29,7 @@ header {
     color: white;
 }
 
-#menu ul {
+.menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -37,11 +37,11 @@ header {
     background-color: lightblue;
 }
 
-#menu li {
+.menu li {
     float: left;
 }
 
-#menu li a {
+.menu li a {
     display: block;
     color: #000;
     text-align: center;
@@ -49,23 +49,24 @@ header {
     text-decoration: none;
 }
 
-#menu li a:hover {
+.menu li a:hover {
     background-color: #555;
     color: white;
 }
 
 #wensenLijst {
-     list-style-type: none; 
-     margin: 0; 
-     padding: 0; 
-     width: 60%; 
-    }
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    width: 60%; 
+   }
 
 #wensenLijst li { 
-    margin: 20px; 
-    padding: 0.4em; 
-    padding-left: 1.5em; 
-    font-size: 1.6em; 
-    height: 18px; 
+   margin: 20px; 
+   padding: 0.4em; 
+   padding-left: 1.5em; 
+   font-size: 1.6em; 
+   height: 18px; 
+   float: center;
 }
 
