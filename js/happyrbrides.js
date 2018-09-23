@@ -18,8 +18,4 @@ function useStorage(){
     
 }
 
-document.body.onkeydown = function(addItem) {
-    if (e.keyCode == 13)
-        ul.appendChild(li);
-};
 
