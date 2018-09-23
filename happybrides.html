@@ -7,6 +7,8 @@
   <link href="/css/style.habbybrides.css" type="text/css" rel="stylesheet">
   <link href="/css/bootstrap.css" type="text/css" rel="stylesheet">
   <script src="/js/happyrbrides.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <body>
@@ -30,18 +32,31 @@
 </div>
 
 <div>
-    <h4>Deze spullen staan op het lijstje</h4>
-    <ul id="dynamic-list"></ul>
-
-    <input type="text" id="candidate"/>
-    <button onclick="addItem()">add item</button>
-    <button onclick="removeItem()">remove item</button>
-
-
-
-
-
-
+<table>
+  <tr>
+    <td><h4>Deze spullen staan op het lijstje</h4></td>
+  </tr>
+  <tr>
+    <td>
+        <input type="text" id="wens"/>
+        <button onclick="addItem()">add item</button>
+        <button onclick="removeItem()">remove item</button>
+    </td>
+  </tr>
+  <tr>
+    <td><ul id="wensenLijst"></ul></td>
+    </tr>
+    </table>
+<script>
+    $( function() {
+      $( "#wensenLijst" ).sortable();
+      $( "#wensenLijst" ).disableSelection();
+    } );
+    
+    $( function() {
+    $( "#dynamic-list" ).selectable();
+  } );
+</script>
 
 </div>
 
