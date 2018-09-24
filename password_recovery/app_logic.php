@@ -56,24 +56,28 @@ if (isset($_POST['reset-password'])) {
 
     // Send email to user with the token in a link they can click on
 
-    $mail = new PHPMailer();
-    $mail->IsSMTP();
-    $mail->CharSet = 'UTF-8';
-
-    $mail->Host       = "mail.example.com"; // SMTP server example
-    $mail->SMTPDebug  = 0;                     // enables SMTP debug information (for testing)
-    $mail->SMTPAuth   = true;                  // enable SMTP authentication
-    $mail->Port       = 25;                    // set the SMTP port for the GMAIL server
-    $mail->Username   = "username"; // SMTP account username example
-    $mail->Password   = "password";        // SMTP account password example
-
+    
     $to = $email;
     $subject = "Reset your password on jsvdmeer.net";
     $msg = "Hi there, click on this <a href=\"new_pass.php?token=" . $token . "\">link</a> to reset your password on our site";
     $msg = wordwrap($msg,70);
+    $host = "ssl://mail.example.com";
+    $port = "465";
+    $username = "smtp_username";
+    $password = "smtp_password";
     $headers = "From: info@jsvdmeer.net";
-    mail($to, $subject, $msg, $headers);
+    $smtp = Mail::factory('smtp',
+      array ('host' => $host,
+        'port' => $port,
+        'auth' => true,
+        'username' => $username,
+        'password' => $password));
+    $mail = $smtp->send($to, $subject, $msg $headers);
     header('location: pending.php?email=' . $email);
+
+    
+    // mail($to, $subject, $msg, $headers);
+    
   }
 }
 
