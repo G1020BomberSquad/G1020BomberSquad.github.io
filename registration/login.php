@@ -1,4 +1,5 @@
 <?php include('server.php') ?>
+<?php include('/password_recovery/app_logic.php') ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,7 +26,10 @@
   	</div>
   	<p>
   		Nog niet geregistreerd? <a href="register.php">Registreren</a>
-  	</p>
+		</p>
+		<p>
+		<a href="/password_recovery/enter_email.php">Wachtwoord vergeten?</a>
+</p>
   </form>
 </body>
 </html>
