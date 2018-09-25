@@ -1,7 +1,7 @@
 <?php
 /* Attempt MySQL server connection. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
-$link = mysqli_connect("https://mysql.transip.nl/db_structure.php?server=1&db=jsvdmeer_net_form", "jsvdmeer_net_form", "pswd", "formulier");
+$link = mysqli_connect("localhost", "jsvdmeer_net_database", "AkHKV7F6VwkH", "jsvdmeer_net_database");
  
 // Check connection
 if($link === false){
@@ -17,7 +17,8 @@ $email = mysqli_real_escape_string($link, $_REQUEST['email']);
 $text = mysqli_real_escape_string($link, $_REQUEST['text']);
  
 // Attempt insert query execution
-$sql = "INSERT INTO formulier (Voornaam, Achternaam, Geslcaht, Onderwerp, Email, Bericht) VALUES ('$firstname', '$lastname', '$gender', '$subject' '$email', '$text')";
+$sql = "INSERT INTO formulier (Voornaam, Achternaam, Geslacht, Onderwerp, Email, Bericht) 
+VALUES ('$firstname', '$lastname', '$gender', '$subject', '$email', '$text')";
 if(mysqli_query($link, $sql)){
     echo "Records added successfully.";
 } else{
@@ -28,4 +29,3 @@ if(mysqli_query($link, $sql)){
 mysqli_close($link);
 ?>
 
-IegrK445020

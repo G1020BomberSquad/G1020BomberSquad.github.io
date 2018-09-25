@@ -24,7 +24,7 @@
     </div>
     <h3>Als u contact met mij wil opnemen, vul dan alstublieft het onderstaande formulier in.</h3>
     <div id="form">
-     <form action="mailto:info@jsvdmeer.net" method="post">
+     <form action="./formgegevens.php" method="post">
         
         <label for="firstname">Voornaam</label>
         <input type="text" name="firstname" placeholder="Uw voornaam..">
@@ -36,11 +36,11 @@
         <select id="gender" name="gender">
             <option value="male">Man</option>
             <option value="female">Vrouw</option>
-            <option value="notspecified">Anders</option>
+            <option value="else">Anders</option>
         </select>
 
         <label for="subject">Onderwerp</label>
-        <select id="reason" name="gender">
+        <select id="subject" name="subject">
             <option value="info">Info</option>
             <option value="work">Werk</option>
             <option value="hobby">Hobbýs</option>
