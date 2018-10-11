@@ -56,27 +56,14 @@ if (isset($_POST['reset-password'])) {
 
     // Send email to user with the token in a link they can click on
 
-    
     $to = $email;
     $subject = "Reset your password on jsvdmeer.net";
-    $msg = "Hi there, click on this <a href=\"new_pass.php?token=" . $token . "\">link</a> to reset your password on our site";
+    $msg = "Hoi, klik op deze link om je wachtwoord te resetten: https://jsvdmeer.net/password_recovery/new_pass.php?token=" . $token . "\ ";
     $msg = wordwrap($msg,70);
-    $host = "ssl://mail.example.com";
-    $port = "465";
-    $username = "smtp_username";
-    $password = "smtp_password";
     $headers = "From: info@jsvdmeer.net";
-    $smtp = Mail::factory('smtp',
-      array ('host' => $host,
-        'port' => $port,
-        'auth' => true,
-        'username' => $username,
-        'password' => $password));
-    $mail = $smtp->send($to, $subject, $msg $headers);
+    mail($to, $subject, $msg, $headers);
     header('location: pending.php?email=' . $email);
 
-    
-    // mail($to, $subject, $msg, $headers);
     
   }
 }
@@ -100,7 +87,7 @@ if (isset($_POST['new_password'])) {
       $new_pass = md5($new_pass);
       $sql = "UPDATE registration SET password='$new_pass' WHERE email='$email'";
       $results = mysqli_query($db, $sql);
-      header('location: index.php');
+      header('location: /registration/login.php');
     }
   }
 }

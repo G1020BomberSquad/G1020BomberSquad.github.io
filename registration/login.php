@@ -1,5 +1,4 @@
 <?php include('server.php') ?>
-<?php include('/password_recovery/app_logic.php') ?>
 <!DOCTYPE html>
 <html>
 <head>

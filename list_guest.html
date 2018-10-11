@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>a Special day</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/css/style.habbybrides.css" type="text/css" rel="stylesheet">
+  <link href="/css/bootstrap.css" type="text/css" rel="stylesheet">
+  <script src="/js/happyrbrides.js"></script>
+  <script src="/js/chat.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+
+<div class="menu">
+    <header>
+        <h3>Welkom</h3> 
+    </header>
+    <ul id="balk">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./hobby.html">Hobby's</a></li>
+        <li><a href="./contact.html"\>Contact</a></li>
+        <li><a href="./happybrides.html"\>Happy Brides</a></li>
+    </ul>
+</div>
+
+<div class="jumbotron text-center">
+  <h1>Dit wil het bruidspaar graag hebben</h1>
+</div>
+    <table id="wensTabel">
+      <tr>
+        <td colspan="2">
+            <h3><strong>Lijst van Ton en Annie</strong></h3>            
+        </td>
+        <td>
+            <h3>Gekocht</h3>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <ul id="wensenLijst">
+                <li>Taart</li>
+                <li>Jurk</li>
+                <li>Sambal</li>
+                <li>Koe</li>
+                <li>Playstation 7</li>
+                <li>Gerard Joling</li>
+                <li>Ringen</li>
+                <li>Pannenkoekbeslag</li>
+                <li>Banaan</li>
+                <li>Chocoladeletter</li>
+                <li>Koffie</li>
+            </ul>
+        </td>
+        <td>
+            <ul id="wensenLijst">
+            <li><a href="./chat.html">Chat</a></li>
+            <li><a href="./chat.html">Chat</a></li>
+            <li><a href="./chat.html">Chat</a></li>
+            <li><a href="./chat.html">Chat</a></li>
+            <li><a href="./chat.html">Chat</a></li>
+            <li><a href="./chat.html">Chat</a></li>
+            <li><a href="./chat.html">Chat</a></li>
+            <li><a href="./chat.html">Chat</a></li>
+            <li><a href="./chat.html">Chat</a></li>
+            <li><a href="./chat.html">Chat</a></li>
+            <li><a href="./chat.html">Chat</a></li>
+            </ul>
+        </td>
+        <td>
+            <ul id="wensenLijst">
+                <li><input type="checkbox" name="" id=""></li>
+                <li><input type="checkbox" name="" id=""></li>
+                <li><input type="checkbox" name="" id=""></li>
+                <li><input type="checkbox" name="" id=""></li>
+                <li><input type="checkbox" name="" id=""></li>
+                <li><input type="checkbox" name="" id=""></li>
+                <li><input type="checkbox" name="" id=""></li>
+                <li><input type="checkbox" name="" id=""></li>
+                <li><input type="checkbox" name="" id=""></li>
+                <li><input type="checkbox" name="" id=""></li>
+                <li><input type="checkbox" name="" id=""></li>
+            </ul>
+        </td>
+        </tr>
+        </table>
+    <script>
+        $( function() {
+          $( "#wensenLijst" ).sortable();
+          $( "#wensenLijst" ).disableSelection();
+        } );
+        
+        $( function() {
+        $( "#dynamic-list" ).selectable();
+      } );
+    </script>
+</div>
+
+</body>
+</html>
