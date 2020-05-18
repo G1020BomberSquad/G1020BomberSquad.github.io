@@ -13,7 +13,7 @@
 <body class="text-center">
   <!-- Navbar -->
   <nav class="navbar navbar-expand-md fixed-top bg-dark navbar-dark">
-    <div class="container">
+    <div class="container" >
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
       <div class="collapse navbar-collapse justify-content-center" id="navbar2SupportedContent">
         <ul class="navbar-nav">
@@ -21,13 +21,18 @@
             <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item mx-2">
-            <a class="nav-link" href="#fotos">Foto's</a>
+            <a class="nav-link" href="#opdracht">De opdracht</a>
           </li>
           <li class="nav-item mx-2">
-            <a class="nav-link" href="#schedule">Opleidingen</a>
+            <a class="nav-link" href="./robot.html">De robot</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="./docenten.html">Voor docenten</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#interesse">Geïnteresseerd?</a>
           </li>
         </ul>
-        <a class="btn navbar-btn mx-2 text-white btn-outline-light" href="#register">Verhaaltjes</a>
       </div>
     </div>
   </nav>
@@ -36,9 +41,9 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-white mt-5">
-          <h1 class="display-2 d-none d-md-block">Bob</h1>
+          <h1 class="display-2 d-none d-md-block">Robotica project</h1>
           <p class="">Welkom op de robotica website van groep 8! Op deze website kunt informatie over het team, de opdracht, onze robot en al onze documenten vinden. Mocht u een vraag hebben of geïnteresseerd zijn in onze robot, dan vragen we u contact met ons op te nemen via het contactformulier onder het tabje “Geïnteresseerd?”.</p>
-          <a href="#register" class="btn btn-lg mt-4 btn-outline-light">Naar onze verhaaltjes</a><i class="d-block fa fa-angle-down pt-5 fa-3x"></i>
+          <a href="#opdracht" class="btn btn-lg mt-4 btn-outline-light">De opdracht</a>
         </div>
       </div>
     </div>
@@ -48,19 +53,18 @@
     <div class="container my-5 bg-light p-4">
       <div class="row mx-auto">
         <div class="col-md-12">
-          <h1 class="mb-3" contenteditable="true">Bob heeft een droom</h1>
+          <h1 class="mb-3" id="opdracht">De opdracht</h1>
           <p class="">Tijdens dit robotica project is het aan ons de taak om een robot te bouwen. Vanwege de corona-maatregelen wordt deze robot, genaamd "Bob", virtueel gebouwd.De robot wordt met een team van 13 mensen afkomstig van verschillende opleidingen gemaakt..</p>
           <p class="">Allereerst zal de opleiding Werktuigbouwkunde samen met Elektrotechniek een ontwerp maken voor de robot. Daarbij moet rekening gehouden worden met de afmetingen waaraan "Bob" moet voldoen. Deze eisen zijn vanuit de projectbegeleiding opgesteld. Ondertussen zorgt de opleiding HBO-ICT ervoor dat de digitale omgeving klaargezet wordt. Daar vallen onder andere deze website en de virtuele wereld onder.</p>
           <p class="">Na de eerste ontwerpfase zullen de elektrotechnici zich bezighouden met het bouwen van een virtuele controller om de robot aan te kunnen sturen. Samen met de ICT’ers wordt ervoor gezorgd dat deze controller ook op een website te zien is. Op deze website staan ook de data en camerabeelden die "Bob" zal zien. De werktuigbouwkundigen houden zich bezig met het verder ontwerpen van de robot. Hieronder valt niet alleen het fysieke gedeelte, maar ook alle berekeningen die bij het ontwerp horen.</p>
           <p class="">Uiteindelijk zullen er een aantal dingen opgeleverd worden. De website die u nu bekijkt is daar een van. De data en besturing van de robot vindt plaats op een andere website, en daarin is uiteraard ook de robot zelf te zien.</p>
-          <a href="#schedule" class="btn btn-outline-primary btn-lg m-2">Opleidingen</a>
-          <a class="btn btn-primary btn-lg m-2" href="#register">Verhaaltjes</a>
+          <a href="#team" class="btn btn-outline-primary btn-lg m-2">Het team</a>
         </div>
       </div>
     </div>
   </div>
-  <div class="py-4 section-parallax"></div>
-  <div id="fotos" class="carousel slide" data-ride="carousel">
+  <!-- <div class="py-4 section-parallax"></div> -->
+  <!-- <div id="fotos" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -85,10 +89,10 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
-  </div>
-  <div class="py-4 section-parallax"></div>
+  </div> -->
+  <!-- <div class="py-4 section-parallax"></div> -->
   <!-- Schedule -->
-  <div class="py-5 section-parallax" style="	background-image: url(assets/conference/55179.jpg);	background-position: top left;	background-size: 100%;	background-repeat: repeat;" id="schedule">
+  <div class="py-5 section-parallax" style="	background-image: url(assets/conference/55179.jpg);	background-position: top left;	background-size: 100%;	background-repeat: repeat;" id="team">
     <div class="container section-aquamarine">
       <div class="row">
         <div class="col-md-12">
@@ -104,8 +108,8 @@
             <ul class="list-group list-group-flush">
               <li class="list-group-item"><i class="mx-auto fa d-inline text-primary fa-user"></i>&nbsp;Marle Mulder - <b>Scrummaster</b></li>
               <li class="list-group-item"><i class="mx-auto fa d-inline fa-user text-primary"></i>&nbsp;Johan van der Meer –&nbsp;<b>Projectleider</b></li>
-              <li class="list-group-item" style=""><i class="mx-auto fa d-inline fa-user text-primary"></i>&nbsp;Betty Visser - <b>Software Minion #1</b></li>
-              <li class="list-group-item" style=""><i class="mx-auto fa d-inline fa-user text-primary"></i>&nbsp;Robin Wagenaar - <b>Apple Professional</b></li>
+              <li class="list-group-item"><i class="mx-auto fa d-inline fa-user text-primary"></i>&nbsp;Betty Visser - <b>Software Minion #1</b></li>
+              <li class="list-group-item"><i class="mx-auto fa d-inline fa-user text-primary"></i>&nbsp;Robin Wagenaar - <b>Apple Professional</b></li>
               <li class="list-group-item"><i class="mx-auto fa d-inline fa-user text-primary"></i>&nbsp;Diego Bencherif - <b>Software Minion #2</b></li>
               <li class="list-group-item"><i class="mx-auto fa d-inline fa-user text-primary"></i>&nbsp;Bart Terpstra - <b>Software Minion #3</b></li>
               <li class="list-group-item"><i class="mx-auto fa d-inline fa-user text-primary"></i>&nbsp;Jasper Steenhuis -&nbsp;<b>Software Minion #4</b></li>
@@ -126,7 +130,7 @@
         <div class="p-4 col-lg-4">
           <div class="card text-dark">
             <div class="card-block text-center p-2">
-              <h4 style="" contenteditable="true">Werktuigbouwkunde</h4>
+              <h4 contenteditable="true">Werktuigbouwkunde</h4>
             </div>
             <ul class="list-group list-group-flush">
               <li class="list-group-item"><i class="mx-auto fa d-inline fa-user text-primary"></i>&nbsp;Pieter Buren - <b>Fan van zeehonden</b></li>
@@ -145,11 +149,8 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8 text-md-left text-center">
-          <h1 class="text-white">Verhaaltjes</h1>
+          <h1 class="text-white" >Weetjes</h1>
           <p>Wij hebben natuurlijk bakken documentatie. Dit willen wij graag laten zien</p>
-        </div>
-        <div class="col-md-4 align-self-center animate-in-right">
-          <a href="./story.html" class="btn btn-lg btn-light my-3">Story time</a>
         </div>
       </div>
     </div>
@@ -164,17 +165,6 @@
           <p class="my-3">
             <a href="https://www.google.com/maps/place/NHL+Stenden+Hogeschool/@53.2111073,5.7968303,18.5z/data=!4m5!3m4!1s0x0:0x935b1c912d9581bf!8m2!3d53.2112276!4d5.7973802" target="blank" class="text-muted">Lekker thuis, <br>Achter onze computer</a>
           </p>
-          <a class="btn btn-lg btn-primary" href="">Bekijk onze gallerij</a>
-        </div>
-        <div class="my-3 col-lg-4 col-md-6">
-          <h3>Stuur ons een berichtje</h3>
-          <form>
-            <fieldset class="form-group my-3">
-              <input type="email" class="form-control" id="Input Email" placeholder="Email"> </fieldset>
-            <fieldset class="form-group my-3">
-              <input type="message" class="form-control" id="Input Message" placeholder="Message"> </fieldset>
-            <button type="submit" class="btn btn-outline-primary">Submit</button>
-          </form>
         </div>
         <div class="col-lg-1"> </div>
       <div class="row">
