@@ -21,7 +21,16 @@
       <div class="collapse navbar-collapse justify-content-center" id="navbar2SupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item mx-2">
-            <a class="nav-link" href="./index.html">Home</a>
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="./robot.html">De robot</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="./docenten.html">Voor docenten</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="./interesse.html">Geïnteresseerd?</a>
           </li>
         </ul>
       </div>
@@ -49,8 +58,32 @@
       <div class="row mx-auto">
         <div class="col-md-12">
           <h1 class="mb-3">Eisen aan de robot</h1>
-          <p class="">To come.</p>
-          <p class="">To come.</p>
+          <p class="">Onze robot, genaamd Bob, is de kern van dit project. Vanuit de opdrachtgevers (docenten) is er een wedstrijd opgezet met zes opdrachten die we met onze robot moeten uitvoeren. Elke opdracht vraagt om specifieke eisen waar de robot aan moet voldoen. Voorafgaand aan de wedstrijd vindt er eerst een kwalificatie plaats. Ook daar worden meerdere eisen gesteld aan de robot. Hieronder ziet u een lijstje met alle opgestelde eisen die per gedeelte van de wedstrijd die behaald moeten worden.</p>
+          <ol>
+            <li>Kwalificatie</li>
+              <p>De robot moet:</p>
+              <ul>
+                <li>Door een vooraf gemaakt poortje passen</li>
+                <li>Een rit over een maanlandschap met losse stenen kunnen maken</li>
+                <li>Een steen van minimaal 1 kg op kunnen tillen en in een bakje verderop neerleggen</li>
+                <li>Het gewicht van de steen kunnen bepalen tijdens het optillen</li>
+                <li>Een QR-code scannen en vervolgens autonoom naar de locatie rijden die in de code verwerkt staat</li>
+                <li>De temperatuur van water bepalen met behulp van straling meten</li>
+              </ul>
+            <li>Moon race</li>
+              <p>Een snelheidsrace over een recht parcours, zonder hindernissen die 10 meter bedraagt. De maximale tijd bedraagt 10 minuten. Hoe sneller je het parcours aflegt, hoe beter. Deze opdracht mag met handbesturing worden uitgevoerd.</p>
+            <li>Dancing on the moon</li>
+              <p>Laat de robot een dans uitvoeren op een danscirkel met een diameter van 2 meter. De dans moet precies 2 minuten duren en de dans moet onder begeleiding van zelfgekozen muziek worden uitgevoerd. Er mag ook gebruik gemaakt worden van kleding of andere accessoires.</p>
+            <li>Moonwalk</li>
+              <p>Elke robot moet op hetzelfde vooraf bepaalde nummer dansen. De dans moet op het ritme van de muziek worden uitgevoerd. Dat betekent dus dat de robot zelf moet luisteren naar de beat. Ook moet de verandering in volume gedetecteerd worden en in de vorm van lichtsignalen zichtbaar gemaakt worden.</p>
+            <li>Moon surival</li>
+              <p>Een obstaclecourse waarbij de robot een trap op moet rijden. Daarbij moet de robot ook over een gat rijden en vervolgens weer naar beneden. Onderaan staat dan een bekertje die voorzichtig aangetikt moet worden. Zie onderstaande afbeelding voor een impressie.</p>
+              <p>Afbeelding van trap</p>
+              <li>Moon maze</li>
+              <p>Hier moet de robot autonoom door een doolhof doorlopen. Dit moet gedaan worden door de camera op de robot te gebruiken om de omgeving waar te nemen. Uiteindelijk moet de robot allerlei stenen verzamelen die in het doolhof verstopt zijn. Elke steen levert een punt op. Ook kunnen er punten gehaald worden door waterbronnen te vinden en daarvan de temperatuur te meten. De maximale tijd om zoveel mogelijk punten te halen bedraagt 10 minuten.</p>
+            <li>Plant the flag</li>
+              <p>De robot begint onderaan een heuvel en moet na het startsignaal zo snel mogelijk een zelf meegebrachte vlag op de top van de heuvel plaatsen. Het draait hierbij om de tijd, dus hoe sneller, hoe meer punten.</p>
+          </ol>
         </div>
       </div>
     </div>
@@ -62,7 +95,9 @@
       <div class="row mx-auto">
         <div class="col-md-12">
           <h1 class="mb-3">Het ontwerp</h1>
-          <p class="">To come.</p>
+          <p>Het ontwerp van de robot moet zo ontwikkeld zijn dat hij aan alle bovenstaande eisen voldoet. De studenten van Werktuigbouwkunde hebben hier uitgebreid onderzoek naar gedaan. Er moet ook rekening gehouden worden met de verschillende omstandigheden op de maan, zoals zwaartekracht en het “gedrag” van materialen op de maan. Samen met de input van de studenten van Elektrotechniek is het ontwerp op onderstaande manier tot stand gekomen. Het begon met een schets op papier, daarna werd het een 3D model en uiteindelijk is het een object in de virtuele wereld geworden.</p>
+          <p>Afbeeldingen van ontwerpproces</p>
+          <p>Onderbouwing WTB keuze materialen</p>
         </div>
       </div>
     </div>
@@ -74,7 +109,8 @@
       <div class="row mx-auto">
         <div class="col-md-12">
           <h1 class="mb-3">Besturing</h1>
-          <p class="">To come.</p>
+          <p>Natuurlijk moet de robot ook reageren op input vanuit de buitenwereld. Daarom is <Bob> te besturen met een virtuele en een fysieke controller. De virtuele controller is een website met daarop de beelden van de camera in de robot, beelden van de robot zelf, knoppen om de robot klaar te maken voor een opdracht, knoppen om de robot te besturen en alle sensorwaarden en andere parameters. Op onderstaande afbeeldingen kunt u zien hoe het eruitziet.</p>
+          <p>Afbeeldingen controller website en fysieke controller</p>
         </div>
       </div>
     </div>
@@ -86,7 +122,8 @@
       <div class="row mx-auto">
         <div class="col-md-12">
           <h1 class="mb-3" contenteditable="true">Technische componenten</h1>
-          <p class="">To come.</p>
+          <p>De elektrotechnici hebben ervoor gezorgd dat Bob genoeg sensoren en actuatoren heeft om zich autonoom te kunnen voortbewegen op de maan. Al deze componenten geven input aan het “brein” van de robot die alles verwerkt. Op deze manier kan de robot ook zelf rondrijden zonder input van de buitenwereld. Hieronder kunt u zien welke technische onderdelen de robot allemaal bevat.</p>
+          <p>Lijst met onderdelen</p>
         </div>
       </div>
     </div>
