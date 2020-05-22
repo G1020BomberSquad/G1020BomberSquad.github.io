@@ -6536,3 +6536,8 @@ body > * {
   left: 0;
   min-height: 300px;
 }
+
+.single-image {
+  align-content: center;
+  height: 300px;
+}
