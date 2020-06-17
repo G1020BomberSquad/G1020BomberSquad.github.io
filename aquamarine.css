@@ -6541,3 +6541,7 @@ body > * {
   align-content: center;
   height: 300px;
 }
+.img-middle{
+  display: block;
+  margin: 0 auto;
+}

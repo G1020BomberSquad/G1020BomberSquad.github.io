@@ -79,7 +79,7 @@
               <p>Elke robot moet op hetzelfde vooraf bepaalde nummer dansen. De dans moet op het ritme van de muziek worden uitgevoerd. Dat betekent dus dat de robot zelf moet luisteren naar de beat. Ook moet de verandering in volume gedetecteerd worden en in de vorm van lichtsignalen zichtbaar gemaakt worden.</p>
             <li>Moon surival</li>
               <p>Een obstaclecourse waarbij de robot een trap op moet rijden. Daarbij moet de robot ook over een gat rijden en vervolgens weer naar beneden. Onderaan staat dan een bekertje die voorzichtig aangetikt moet worden. Zie onderstaande afbeelding voor een impressie.</p>
-              <img src="images/robot/trap met beker.PNG" class="single-image">
+              <img src="images/robot/trap met beker.PNG" class="single-image img-middle">
               <br>
             <li>Moon maze</li>
               <p>Hier moet de robot autonoom door een doolhof doorlopen. Dit moet gedaan worden door de camera op de robot te gebruiken om de omgeving waar te nemen. Uiteindelijk moet de robot allerlei stenen verzamelen die in het doolhof verstopt zijn. Elke steen levert een punt op. Ook kunnen er punten gehaald worden door waterbronnen te vinden en daarvan de temperatuur te meten. De maximale tijd om zoveel mogelijk punten te halen bedraagt 10 minuten.</p>
@@ -98,32 +98,68 @@
         <div class="col-md-12">
           <h1 class="mb-3">Het ontwerp</h1>
           <p>Het ontwerp van de robot moet zo ontwikkeld zijn dat hij aan alle bovenstaande eisen voldoet. De studenten van Werktuigbouwkunde hebben hier uitgebreid onderzoek naar gedaan. Er moet ook rekening gehouden worden met de verschillende omstandigheden op de maan, zoals zwaartekracht en het “gedrag” van materialen op de maan. Samen met de input van de studenten van Elektrotechniek is het ontwerp op onderstaande manier tot stand gekomen. Het begon met een schets op papier, daarna werd het een 3D model en uiteindelijk is het een object in de virtuele wereld geworden.</p>
+          <div class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="d-block w-100" src="/images/robot/gerenderde impressie.png"
+              <img class="d-block w-100" src="/images/robot/schets papier.jpg"
                 alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Eerste schets</h5>
+                </div>
             </div>
             <div class="carousel-item">
               <img class="d-block w-100" src="/images/robot/inspiratiefoto.jpg"
                 alt="Second slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Inspiratie foto</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="/images/robot/gerenderde impressie.png" 
+              alt="Third slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Eerste gerenderde ontwerp</h5>
+              </div>
             </div>
             <div class="carousel-item">
               <img class="d-block w-100" src="/images/robot/mogelijkheid.png" 
-              alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="/images/robot/schets papier.jpg" 
-              alt="Third slide">
+              alt="Fourth slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Tweede gerenderde impressie</h5>
+              </div>
             </div>
           </div>
-          <h1 class="mb-3">De materialen</h1>
+
+          </div>
+          <h1 class="mb-3" style="margin-top:40px;">De materialen</h1>
           <p>De robot is voor het grootste gedeelte gemaakt met aluminium, ENAW-6082 T6. Dit is kozen vanwege de hoge sterkte, taaiheid en de goede verspaanbaar- en lasbaarheid. Aluminium kan in tegenstelling tot normaal constructiestaal tegen de extreme temperaturen op de maan en heeft een lagere dichtheid, iets wat gunstiger uit kan komen op de totale massa van de robot.</p>
           <h1 class="mb-3">Het uiterlijk</h1>
           <p>Het eerste wat eigenlijk aan de robot opvalt, is dat het een rupsvoertuig is. De reden hiervoor is dat voor rupsvoertuigen, in tegenstelling tot voertuigen met wielen, obstakels zoals heuvels en greppels een aanzienlijk kleiner probleem vormen. Het maanlandschap waarop het voertuig zich moet verplaatsen bestaat uit regoliet, een rotsachtig landschap met een losse laag grind. Dat valt te vergelijken met het landschap van het nationaal park Timanfaya, dat zich op de Canarische eilanden bevindt (zie afbeelding hieronder).</p>
-          <img src="images/robot/maanlandschap nationaal park.jpg" class="single-image">
+          <img src="images/robot/maanlandschap nationaal park.jpg" class="single-image img-middle">
+          <br/>
           <p>Vanwege de grootte van de robot, ruwweg een halve meter lang, is besloten dat het een rupsvoertuig wordt. Een voertuig van deze grootte zou anders over vrij kleine wielen beschikken, iets wat niet praktisch is in dit landschap. Een voertuig met (kleine) wielen heeft namelijk een grote kans in dit landschap op vast te komen zitten.</p>
         </div>
       </div>
+     <img src="images/solid_works_plaatjes/ontleden.gif" class="single-image img-middle" alt="ontleden.gif"/>
+      <div class="carousel slide" data-ride="carousel" style="margin-top:40px;">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="images/solid_works_plaatjes/tank.png"
+              alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/solid_works_plaatjes/schuinachter.png"
+              alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/solid_works_plaatjes/voorkant.png" 
+            alt="Third slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/solid_works_plaatjes/doorkijk.png" 
+            alt="Fourth slide">
+          </div>
+        </div>
     </div>
   </div>
   <!-- Parallax section -->
@@ -133,7 +169,7 @@
       <div class="row mx-auto">
         <div class="col-md-12">
           <h1 class="mb-3">Besturing</h1>
-          <p>Natuurlijk moet de robot ook reageren op input vanuit de buitenwereld. Daarom is <Bob> te besturen met een virtuele en een fysieke controller. De virtuele controller is een website met daarop de beelden van de camera in de robot, beelden van de robot zelf, knoppen om de robot klaar te maken voor een opdracht, knoppen om de robot te besturen en alle sensorwaarden en andere parameters. Op onderstaande afbeeldingen kunt u zien hoe het eruitziet.</p>
+          <p>Natuurlijk moet de robot ook reageren op input vanuit de buitenwereld. Daarom is Bob te besturen met een virtuele en een fysieke controller. De virtuele controller is een website met daarop de beelden van de camera in de robot, beelden van de robot zelf, knoppen om de robot klaar te maken voor een opdracht, knoppen om de robot te besturen en alle sensorwaarden en andere parameters. Op onderstaande afbeeldingen kunt u zien hoe het eruitziet.</p>
             <div id="fotos" class="carousel slide" data-ride="carousel">
               <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -142,16 +178,25 @@
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img class="d-block w-100" src="/images/controllers/prototype_v0.7.png"
+                  <img class="d-block w-100 h-100" src="/images/controllers/prototype_v0.7.png"
                     alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Indeling van controller</h5>
+                    </div>
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="/images/controllers/Remote Robot Controller.png"
+                  <img class="d-block w-100 h-100" src="/images/controllers/Remote Robot Controller.png"
                     alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Eerste mockup van controller</h5>
+                    </div>
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="/images/controllers/Webot mockup.png" 
+                  <img class="d-block w-100 h-100" src="/images/controllers/Webot mockup.png" 
                   alt="Third slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Uiteindelijke controller</h5>
+                  </div>
                 </div>
               </div>
             </div>
